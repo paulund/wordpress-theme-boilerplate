@@ -1,0 +1,19 @@
+/*
+Theme Name:     WordPress-Theme-Boilerplate
+Theme URI:      @TODO
+Description:    @TODO
+Author:         Paulund
+Author URI:     http://paulund.co.uk/
+Version:        1.0
+*/
+
+@import 'scss/_functions';
+@import 'scss/_reset';
+@import 'scss/_generic';
+
+@import 'scss/_header';
+@import 'scss/_footer';
+
+@import 'scss/_listposts';
+@import 'scss/_single';
+@import 'scss/_widgets';
