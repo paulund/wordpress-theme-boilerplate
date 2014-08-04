@@ -6,5 +6,8 @@
  *
  * @since 1.0
  */
-
-// @TODO - Create footer partial
+?>
+    </div>
+    </div>
+    </body>
+</html>

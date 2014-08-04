@@ -7,4 +7,6 @@
  * @since 1.0
  */
 
-// @TODO - Create single post page
+get_header(); ?>
+
+<?php get_footer(); ?>
