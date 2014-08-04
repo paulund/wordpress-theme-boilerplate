@@ -9,12 +9,10 @@
 
 function wtb_register_sidebar()
 {
-    global $textdomain;
-
     register_sidebar( array(
-        'name'          => __( 'Primary Sidebar', $textdomain ),
+        'name'          => __( 'Primary Sidebar', THEME_TEXTDOMAIN ),
         'id'            => 'sidebar-1',
-        'description'   => __( 'Main sidebar that appears on the left.', $textdomain ),
+        'description'   => __( 'Main sidebar that appears on the left.', THEME_TEXTDOMAIN ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h1 class="widget-title">',

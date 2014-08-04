@@ -9,10 +9,8 @@
 
 function wtb_theme_setup()
 {
-    global $textdomain;
-
     // Load languages
-    load_theme_textdomain( $textdomain, get_template_directory() . '/lang' );
+    load_theme_textdomain( THEME_TEXTDOMAIN, get_template_directory() . '/lang' );
 
     // Editor styles
     add_editor_style( array( 'css/editor-style.css' ) );

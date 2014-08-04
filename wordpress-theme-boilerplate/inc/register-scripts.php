@@ -9,9 +9,7 @@
 
 function wtb_register_scripts()
 {
-    global $textdomain;
-
     // Load main stylesheet
-    wp_enqueue_style( $textdomain.'-style', get_stylesheet_uri() );
+    wp_enqueue_style( THEME_TEXTDOMAIN.'-style', get_stylesheet_uri(), array(), THEME_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'wtb_register_scripts');

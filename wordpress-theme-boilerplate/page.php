@@ -1,7 +1,8 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Paul
- * Date: 04/08/2014
- * Time: 10:32
+ * Page template
+ *
+ * @package WordPress-Theme-Boilerplate
+ *
+ * @since 1.0
  */ 

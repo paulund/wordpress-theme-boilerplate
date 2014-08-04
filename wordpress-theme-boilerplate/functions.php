@@ -12,7 +12,8 @@ if ( ! isset( $content_width ) ) {
     $content_width = 1024;
 }
 
-$textdomain = 'wordpress-theme-boilerplate';
+define('THEME_TEXTDOMAIN', 'wordpress-theme-boilerplate');
+define('THEME_VERSION', 1.0);
 
 require_once dirname( __FILE__) . '/inc/theme-setup.php';
 require_once dirname( __FILE__) . '/inc/register-menus.php';

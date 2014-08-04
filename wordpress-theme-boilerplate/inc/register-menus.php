@@ -9,12 +9,10 @@
 
 function wtb_register_menus()
 {
-    global $textdomain;
-
     // Register Menus
     register_nav_menus( array(
-        'primary'   => __( 'Top primary menu', $textdomain ),
-        'secondary' => __( 'Secondary menu in left sidebar', $textdomain ),
+        'primary'   => __( 'Top primary menu', THEME_TEXTDOMAIN ),
+        'secondary' => __( 'Secondary menu in left sidebar', THEME_TEXTDOMAIN ),
     ) );
 }
 add_action('after_setup_theme', 'wtb_register_menus');
