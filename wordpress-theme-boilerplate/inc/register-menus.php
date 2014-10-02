@@ -7,12 +7,19 @@
  * @since 1.0
  */
 
-function wtb_register_menus()
+class Wtb_Register_Menus
 {
-    // Register Menus
-    register_nav_menus( array(
-        'primary'   => __( 'Top primary menu', THEME_TEXTDOMAIN ),
-        'secondary' => __( 'Secondary menu in left sidebar', THEME_TEXTDOMAIN ),
-    ) );
+    public function __construct()
+    {
+        add_action('after_setup_theme', array($this, 'wtb_register_menus'));
+    }
+
+    public function wtb_register_menus()
+    {
+        // Register Menus
+        register_nav_menus( array(
+            'primary'   => __( 'Top primary menu', THEME_TEXTDOMAIN ),
+        ) );
+    }
 }
-add_action('after_setup_theme', 'wtb_register_menus');
+$wtb_register_menus = new Wtb_Register_Menus();

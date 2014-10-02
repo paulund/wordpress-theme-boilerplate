@@ -19,3 +19,11 @@ require_once dirname( __FILE__) . '/inc/theme-setup.php';
 require_once dirname( __FILE__) . '/inc/register-menus.php';
 require_once dirname( __FILE__) . '/inc/register-sidebars.php';
 require_once dirname( __FILE__) . '/inc/register-scripts.php';
+
+if(!function_exists('wtb_paging_nav'))
+{
+    function wtb_paging_nav()
+    {
+
+    }
+}
